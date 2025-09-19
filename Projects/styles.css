@@ -1,0 +1,122 @@
+/* Shared styles for all pages */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #18181b;
+  color: #fff;
+}
+.gradient-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4f46e5 0%, #9333ea 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.centered-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.auth-card {
+  background: #18181b;
+  border-radius: 16px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.25);
+  padding: 2.5rem 2rem 2rem 2rem;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.auth-icon {
+  background: #4f46e5;
+  border-radius: 50%;
+  padding: 16px;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.auth-icon img {
+  width: 36px;
+  height: 36px;
+}
+h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.subtitle {
+  color: #a1a1aa;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+label {
+  font-size: 0.95rem;
+  color: #d4d4d8;
+  margin-bottom: 0.2rem;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 90%;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  border: none;
+  background: #27272a;
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+input:focus {
+  outline: 2px solid #6366f1;
+}
+.password-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.eye-icon {
+  position: absolute;
+  right: 12px;
+  cursor: pointer;
+  color: #a1a1aa;
+  font-size: 1.1rem;
+}
+.primary-btn {
+  width: 100%;
+  padding: 0.8rem 0;
+  background: linear-gradient(90deg, #4f46e5 0%, #9333ea 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.primary-btn:hover {
+  background: linear-gradient(90deg, #6366f1 0%, #a21caf 100%);
+}
+.switch-link {
+  margin-top: 1.2rem;
+  color: #a1a1aa;
+  font-size: 0.97rem;
+}
+.switch-link a {
+  color: #6366f1;
+  text-decoration: none;
+  font-weight: 500;
+}
+.switch-link a:hover {
+  text-decoration: underline;
+}

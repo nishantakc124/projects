@@ -1,0 +1,280 @@
+
+.nav-link.activ, .nav-link:hover {
+  background: #27272a;
+  color: #fff;
+}
+
+/* inner container to keep content readable and aligned with dashboard */
+.settings-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.25rem 0 0;
+    box-sizing: border-box;
+}
+
+/* Typography helpers moved from inline styles */
+.page-title {
+    margin-bottom: 0.2rem;
+}
+.page-subtitle {
+    margin-bottom: 2.2rem;
+}
+
+/* Utility: full-span grid child */
+.span-full { grid-column: 1 / -1; position: relative; }
+
+/* Label icon spacing */
+.label-icon img { vertical-align: middle; margin-right: 6px; }
+
+/* Button icon spacing */
+.btn-icon { margin-right: 8px; vertical-align: middle; }
+
+.dashboard-main {
+    margin-left: 250px !important;
+    width: calc(100% - 250px) !important;
+    box-sizing: border-box;
+}
+
+
+/* grid children must allow shrinking to prevent overflow */
+.grid-2>div {
+    min-width: 0;
+}
+
+/* ensure inputs use border-box so padding doesn't cause overflow */
+.settings-form input,
+.settings-form select,
+.settings-form textarea {
+    box-sizing: border-box;
+}
+
+/* Main container adjustments (overrides/additions to dashboard.css) */
+.settings-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    width: 100%;
+}
+
+.settings-card {
+    background: #121216;
+    /* slightly darker card */
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    box-shadow: 0 2px 18px rgba(0, 0, 0, 0.6);
+}
+
+.settings-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.settings-icon img {
+    width: 20px;
+    height: 20px;
+    filter: invert(1) brightness(2);
+}
+
+.settings-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.settings-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem 1.25rem;
+}
+
+.settings-form label {
+    font-size: 0.86rem;
+    color: #c9c9cf;
+    margin-bottom: 0.35rem;
+}
+
+.settings-form input[type="text"],
+.settings-form input[type="email"],
+.settings-form input[type="password"],
+.settings-form select {
+    width: 100%;
+    padding: 0.65rem 0.9rem;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    background: #0f0f11;
+    color: #e6e6e9;
+    font-size: 0.95rem;
+}
+
+.password-field {
+    position: relative;
+}
+
+.settings-2fa-card {
+    margin-top: 1rem;
+    background: rgba(255, 255, 255, 0.01);
+    border: 1px solid rgba(255, 255, 255, 0.02);
+    border-radius: 6px;
+    padding: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.settings-2fa-left .settings-2fa-title {
+    font-weight: 600;
+    color: #e6e6e9;
+}
+.settings-2fa-left .settings-2fa-desc {
+    font-size: 0.9rem;
+    color: #9b9b9f;
+}
+
+.settings-2fa-status.enabled {
+    background: rgba(34, 197, 94, 0.12);
+    color: #22c55e;
+    padding: 0.25rem 0.6rem;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.settings-toggles {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+
+.settings-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.toggle-left { justify-content: flex-start; gap: 1rem; }
+
+.settings-toggle label {
+    font-weight: 600;
+    color: #e6e6e9;
+}
+
+.toggle-desc {
+    display: block;
+    color: #9b9b9f;
+    font-size: 0.86rem;
+    margin-top: 0.25rem;
+}
+
+.settings-toggle input[type="checkbox"] {
+    width: 42px;
+    height: 24px;
+    appearance: none;
+    -webkit-appearance: none;
+    background: #161617;
+    border-radius: 999px;
+    position: relative;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.settings-toggle input[type="checkbox"]:checked {
+    background: linear-gradient(90deg, #4f46e5, #7c3aed);
+    border: none;
+}
+
+.settings-toggle input[type="checkbox"]::after {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border-radius: 50%;
+    top: 3px;
+    left: 3px;
+    transition: transform 0.12s ease-in-out;
+}
+
+.settings-toggle input[type="checkbox"]:checked::after {
+    transform: translateX(18px);
+    background: #fff;
+}
+
+.settings-plan-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.01);
+    border: 1px solid rgba(255, 255, 255, 0.02);
+    padding: 0.9rem;
+    border-radius: 8px;
+    margin-bottom: 0.8rem;
+}
+
+.plan-title { font-weight: 700; color: #e6e6e9; }
+.plan-subtitle { color: #9b9b9f; font-size: 0.95rem; }
+
+.settings-plan-status.active {
+    background: linear-gradient(90deg, #6366f1, #7c3aed);
+    color: #fff;
+    padding: 0.3rem 0.6rem;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.settings-billing-info {
+    display: flex;
+    gap: 0.9rem;
+    margin-top: 0.6rem;
+}
+
+.settings-billing-info>div {
+    background: rgba(255, 255, 255, 0.01);
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.02);
+    flex: 1;
+}
+
+.billing-title { font-weight: 600; color: #e6e6e9; margin-bottom: 0.4rem; }
+.billing-sub { color: #9b9b9f; }
+
+.settings-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0.6rem;
+}
+
+.primary-btn {
+    padding: 0.7rem 1rem;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #4f46e5, #7c3aed);
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    box-shadow: 0 8px 24px rgba(79, 70, 229, 0.18);
+}
+
+/* small screens */
+@media (max-width: 900px) {
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .settings-billing-info {
+        flex-direction: column;
+    }
+
+    .settings-sections {
+        padding: 0 1rem;
+    }
+}
