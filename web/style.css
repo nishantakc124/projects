@@ -171,6 +171,7 @@ ul>li{
   .box>img{
     height: 400px;
     border-radius: 15px;
+    transition: height 3s ease;
   }
   .box>h3{
     margin-top: 5%;
@@ -742,4 +743,5 @@ ul>li{
   display: flex;
   justify-content: space-around;
   align-items: center;
+
 }
