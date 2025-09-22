@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern E-commerce</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">ShopStyle</a>
+
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#" class="nav-link">Home</a></li>
+                    <li><a href="#" class="nav-link">Shop</a></li>
+                    <li><a href="#" class="nav-link">Categories</a></li>
+                    <li><a href="#" class="nav-link">New Arrivals</a></li>
+                    <li><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-icons">
+                <button class="icon-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <button class="icon-btn">
+                    <i class="fa-solid fa-user"></i>
+                </button>
+                <button class="icon-btn">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-count"></span>
+                </button>
+                <button class="mobile-toggle">
+                    <i>☰</i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Slider -->
+    <section class="hero">
+        <div class="slides">
+            <!-- Slide 1 -->
+            <div class="slide active"
+                style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://c1.peakpx.com/wallpaper/573/909/315/store-clothes-clothing-line-fashion-wallpaper.jpg');">
+                <div class="slide-content">
+                    <h2>New Season Collection</h2>
+                    <p>Discover the latest trends in fashion with our exclusive new arrivals. Up to 30% off on selected
+                        items.</p>
+                    <a href="#" class="btn">Shop Now</a>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide"
+                style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://titanhaptics.com/wp-content/uploads/2024/03/Timeline-of-Haptics-600x400.jpg');">
+                <div class="slide-content">
+                    <h2>Tech Essentials Sale</h2>
+                    <p>Upgrade your tech game with our premium electronics collection. Limited time offers available.
+                    </p>
+                    <a href="#" class="btn">Shop Now</a>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slide"
+                style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://www.paldrop.com/wp-content/uploads/2018/09/must-have-kitchen-appliances.jpeg');">
+                <div class="slide-content">
+                    <h2>Home & Living</h2>
+                    <p>Transform your space with our carefully curated home decor and furniture collection.</p>
+                    <a href="#" class="btn">Shop Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-controls">
+            <div class="slider-dot active" data-slide="0"></div>
+            <div class="slider-dot" data-slide="1"></div>
+            <div class="slider-dot" data-slide="2"></div>
+        </div>
+
+        <div class="slider-nav">
+            <button class="slider-btn prev">❮</button>
+            <button class="slider-btn next">❯</button>
+        </div>
+    </section>
+
+
+    <!-- Mystery Sale Section -->
+    <section class="mystery-sale">
+        <div class="container">
+            <div class="mystery-content">
+                <h2 class="mystery-title">MYSTERY SALE</h2>
+                <p class="mystery-subtitle">Limited Time Offers - Uncover Amazing Deals!</p>
+
+                <div class="countdown">
+                    <div class="countdown-item">
+                        <div class="countdown-number">24</div>
+                        <div class="countdown-label">Hours</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number">45</div>
+                        <div class="countdown-label">Minutes</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number">30</div>
+                        <div class="countdown-label">Seconds</div>
+                    </div>
+                </div>
+
+                <div class="mystery-products">
+                    <div class="mystery-product">
+                        <div class="mystery-product-img"
+                            style="background-image: url('https://placeholder-image-service.onrender.com/image/250x150?prompt=Mystery%20product%201&id=mystery1');">
+                        </div>
+                        <h3 class="mystery-product-title">Mystery Item #1</h3>
+                        <div class="mystery-product-price">
+                            <span class="original-price">$99.99</span>
+                            <span class="discount-price">$49.99</span>
+                        </div>
+                        <button class="reveal-btn">Reveal Product</button>
+                    </div>
+
+                    <div class="mystery-product">
+                        <div class="mystery-product-img"
+                            style="background-image: url('https://placeholder-image极速-service.onrender.com/image/250x150?prompt=Mystery%20product%202&id=mystery2');">
+                        </div>
+                        <h3 class="mystery-product-title">Mystery Item #2</h3>
+                        <div class="mystery-product-price">
+                            <span class="original-price">$129.99</span>
+                            <span class="discount-price">$79.99</span>
+                        </div>
+                        <button class="reveal-btn">Reveal Product</button>
+                    </div>
+
+                    <div class="mystery-product">
+                        <div class="mystery-product-img"
+                            style="background-image: url('https://placeholder-image-service.onrender.com/image/250x150?prompt=Mystery%20product%203&id=mystery3');">
+                        </div>
+                        <h3 class="mystery-product-title">Mystery Item #3</h3>
+                        <div class="mystery-product-price">
+                            <span class="original-price">$79.99</span>
+                            <span class="discount-price">$39.99</span>
+                        </div>
+                        <button class="reveal-btn">Reveal Product</button>
+                    </div>
+                </div>
+
+                <div class="mystery-cta">
+                    <button class="mystery-btn">SHOP MYSTERY DEALS</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <div class="section-title">
+                <h2>Shop by Category</h2>
+                <p>Explore our wide range of products</p>
+            </div>
+
+            <div class="categories-grid">
+                <!-- Category 1 -->
+                <div class="category-card">
+                    <div class="category-img"
+                        style="background-image: url('https://c1.peakpx.com/wallpaper/573/909/315/store-clothes-clothing-line-fashion-wallpaper.jpg');">
+                    </div>
+                    <div class="category-content">
+                        <h3>Clothing</h3>
+                        <p>Trendy and comfortable outfits for every occasion</p>
+                        <a href="#" class="btn btn-secondary">Explore</a>
+                    </div>
+                </div>
+
+                <!-- Category 2 -->
+                <div class="category-card">
+                    <div class="category-img"
+                        style="background-image: url('https://titanhaptics.com/wp-content/uploads/2024/03/Timeline-of-Haptics-600x400.jpg');">
+                    </div>
+                    <div class="category-content">
+                        <h3>Electronics</h3>
+                        <p>Latest gadgets and tech accessories</p>
+                        <a href="#" class="btn btn-secondary">Explore</a>
+                    </div>
+                </div>
+
+                <!-- Category 3 -->
+                <div class="category-card">
+                    <div class="category-img"
+                        style="background-image: url('https://www.paldrop.com/wp-content/uploads/2018/09/must-have-kitchen-appliances.jpeg');">
+                    </div>
+                    <div class="category-content">
+                        <h3>Home & Decor</h3>
+                        <p>Beautiful items to transform your living space</p>
+                        <a href="#" class="btn btn-secondary">Explore</a>
+                    </div>
+                </div>
+
+                <!-- Category 4 -->
+                <div class="category-card">
+                    <div class="category-img"
+                        style="background-image: url('https://static.vecteezy.com/system/resources/previews/029/783/763/large_2x/collection-of-makeup-products-and-brushes-glamorous-beauty-essentials-free-photo.jpg');">
+                    </div>
+                    <div class="category-content">
+                        <h3>Beauty</h3>
+                        <p>Premium skincare and beauty products</p>
+                        <a href="#" class="btn btn-secondary">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- featu -->
+
+
+    <section class="section" id="products">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://c1.peakpx.com/wallpaper/573/909/315/store-clothes-clothing-line-fashion-wallpaper.jpg"
+                        alt="Eco-friendly bamboo toothbrush with natural bristles" class="product-img">
+                    <div class="product-content">
+                        <h3 class="product-title">Branded Clothes</h3>
+                        <div class="product-price">$6.99</div>
+                        <p class="product-description">100% Branded Clothes with High-material bristles for
+                            natural wearing.</p>
+                        <div class="product-actions">
+                            <a href="#" class="btn">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-og-image-202409?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1727113715311"
+                        alt="Stainless steel reusable water bottle with eco-design" class="product-img">
+                    <div class="product-content">
+                        <h3 class="product-title">Iphone</h3>
+                        <div class="product-price">$24.99</div>
+                        <p class="product-description">Best and Brand New Iphone for user useable hot or cold for
+                            hours.</p>
+                        <div class="product-actions">
+                            <a href="#" class="btn">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://i.etsystatic.com/38057687/r/il/90af1f/5113292849/il_600x600.5113292849_7a2c.jpg"
+                        alt="Set of organic cotton reusable shopping bags" class="product-img">
+                    <div class="product-content">
+                        <h3 class="product-title">Organic Cotton Tote</h3>
+                        <div class="product-price">$12.99</div>
+                        <p class="product-description">Spacious and durable tote bag made from 100% certified organic
+                            cotton.</p>
+                        <div class="product-actions">
+                            <a href="#" class="btn">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://greenerideal.com/wp-content/uploads/2023/04/LargeBees_Cherries_6e171e3e-7685-4e45-929f-eeb41918a153.jpg"
+                        alt="Assorted beeswax food wraps as plastic wrap alternative" class="product-img">
+                    <div class="product-content">
+                        <h3 class="product-title">Beeswax Food Wraps</h3>
+                        <div class="product-price">$18.99</div>
+                        <p class="product-description">Natural alternative to plastic wrap, made with organic cotton and
+                            beeswax.</p>
+                        <div class="product-actions">
+                            <a href="#" class="btn">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://i.etsystatic.com/24720482/r/il/6871e1/4769850019/il_fullxfull.4769850019_qa7v.jpg"
+                        alt="Package-free solid shampoo and conditioner bars" class="product-img">
+                    <div class="product-content">
+                        <h3 class="product-title">Shampoo Bar Set</h3>
+                        <div class="product-price">$22.99</div>
+                        <p class="product-description">Chemical-free hair care bars that last longer than traditional
+                            bottles.</p>
+                        <div class="product-actions">
+                            <a href="#" class="btn">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://i0.wp.com/www.sourcenonwoven.com/wp-content/uploads/2019/10/bamboo-kitchen-towels-sourcenonwoven-1.jpg?fit=1000%2C1000&ssl=1"
+                        alt="Reusable bamboo fiber towels for kitchen use" class="product-img">
+                    <div class="product-content">
+                        <h3 class="product-title">Bamboo Kitchen Towels</h3>
+                        <div class="product-price">$14.99</div>
+                        <p class="product-description">Super absorbent and durable towels made from sustainable bamboo
+                            fibers.</p>
+                        <div class="product-actions">
+                            <a href="#" class="btn">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>ShopStyle</h3>
+                    <p>Your one-stop destination for all your shopping needs. Quality products at affordable prices.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon">f</a>
+                        <a href="#" class="social-icon">t</a>
+                        <a href="#" class="social-icon">in</a>
+                        <a href="#" class="social-icon">ig</a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Customer Service</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for updates on new products and special offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" class="newsletter-input" required>
+                        <button type="submit" class="newsletter-btn">→</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2023 ShopStyle. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
